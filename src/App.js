@@ -1,25 +1,35 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Buttons from './Components/Buttons';
+import Textarea from './Components/Textarea'
+import TwitterPreview from './Components/TwitterPreview'
+import FacebookPreview from './Components/FacebookPreview'
 
 function App() {
-  return (
+  const [text, setText] = useState('')
+  const [btnClicked, setBtnClicked] = useState('')
+
+  const handleClick = (e) => {
+    setBtnClicked(e.target.value)
+    // console.log(btnClicked)
+  }
+
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>Preview before Upload</h1>
+      <Textarea text={text} setText={setText}/>
+      <Buttons handleClick={handleClick}/>
+      {(btnClicked==='twitter') ? (<TwitterPreview text={text}/>) :
+       (btnClicked==='facebook') ? (<FacebookPreview text={text}/>):
+       (btnClicked==='all') ? (
+       <>
+        <TwitterPreview text={text}/>
+        <FacebookPreview text={text}/>
+       </>):
+       (btnClicked==='reset') ? (btnClicked==='') : (btnClicked==='')}
+
     </div>
-  );
+  )
 }
 
 export default App;

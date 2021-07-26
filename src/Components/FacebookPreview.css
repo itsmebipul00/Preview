@@ -1,0 +1,130 @@
+.facebook{
+    background-color: rgb(231, 229, 229);
+    display: flex;
+    flex-flow: row wrap; 
+    justify-content: left;
+}
+.article2 {
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgb(194, 193, 193);
+}
+
+.post {
+    display: flex;
+    background-color: white;
+    border-radius: 5px;
+    padding-top: 10px;
+    padding-left: 15px;
+}
+
+#aside0 {
+    width: 125px;
+}
+
+
+.notification {
+    margin-left: 10px;
+    display: flex;
+    margin-top: 0;
+}
+
+.hour {
+    font-size: 13px;
+    color: gray;
+}
+
+.profile{
+    width: 49px;
+    height: 49px;
+    /* border-radius: 50%; */
+    margin-right: 10px;
+}
+
+#notify {
+    width: auto;
+    height: 15px;
+    margin-left: 10px;
+} 
+
+.updated {
+    font-size: 15px;
+    color: gray;
+    width: 275px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.ellipse {
+    font-weight: bold;
+    margin-left: 35px;
+    margin-top: 0;
+    cursor: pointer;
+}
+
+.pix {
+    height: 220px;
+    display: flex;
+    cursor: pointer;
+}
+
+.action {
+    display: flex;
+    padding-bottom: 10px;
+    justify-content: center;
+}
+
+.border {
+    border-top: 1px solid rgb(231, 229, 229);
+    display: flex;
+    width: 90%;
+}
+
+.like {
+    margin-left: 50px;
+    padding-right: 20px;
+    margin-top: 10px;
+    color: rgb(88, 86, 86);
+    display: flex;
+    cursor: pointer;
+}
+
+#like, #comment, #share {
+    width: auto;
+    height: 15px;
+    margin-right: 5px;
+}
+
+.comment {
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-top: 10px;
+    color: rgb(88, 86, 86);
+    display: flex;
+    cursor: pointer;
+}
+
+.share {
+    padding-left: 30px;
+    padding-right: 20px;
+    margin-top: 10px;
+    color: rgb(88, 86, 86);
+    display: flex;
+    cursor: pointer;
+}
+
+#span:hover {
+    background-color: rgb(214, 214, 214);
+    border-radius: 5px;
+    padding-top: 1px;
+}
+
+.content {
+    border: none;
+    background-color: transparent;
+    outline: none;
+  }
+  
+  textarea{
+    resize: none;
+  }
